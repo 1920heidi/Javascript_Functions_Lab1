@@ -7,7 +7,7 @@ function createLoginTracker(userInfo) {
     // If already locked (3 failed attempts have been made)
     if (attemptCount >= 3) {
       console.log("Account is locked");
-      return "Account locked due to many failed login attempts";
+      return "Account locked due to too many failed login attempts";
     }
 
     // Increment attempts
